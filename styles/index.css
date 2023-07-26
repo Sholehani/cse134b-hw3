@@ -84,7 +84,6 @@ nav>a:hover{
 
 a {
     font-family: "Roboto";
-    color: var(--gray-200);
     text-align: start;
 }
 main {
