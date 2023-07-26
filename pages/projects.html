@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <link href="/assets/images/myicon.ico" rel="icon">
+    <link rel="stylesheet" type="text/css" href="/styles/projects.css">
+    <style>
+        col {
+            background-color: #bfd2d9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Sholehani Hafezi
+        </h1>
+
+        <nav id="nav-bar">
+            <a id="home" class="nav-link" title="Home" href="/index.html">Home</a>
+            <a id="projects" class="nav-link" title="Projects" href="projects.html">Projects</a>
+            <a id="about" class="nav-link" title="About Me" href="about.html">About Me</a>
+            <a id="thoughts" class="nav-link" title="Thoughts" href="thoughts.html">Thoughts</a>
+            <a id="resume" class="nav-link" title="Resume" download href="/assets/files/resume.pdf">Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects-container" class="main-text" title="Completed Projects">
+            <h2>Completed Projects</h2>
+
+            <details class="project-menu">
+                <summary title="Select a Project">Select a Project</summary>
+                <nav class="project-menu">
+                    <ul>
+                        <li><a href="#project-1" title="Project 1">Project 1</a></li>
+                        <li><a href="#project-2" title="Project 2">Project 2</a></li>
+                    </ul>
+                </nav>
+            </details>
+
+            <br>
+
+            <table id="project-table" class="main-table" title="Project List">
+                <colgroup>
+                    <col span="2">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th id="project-hr"> </th>
+                        <th id="about-project-hr"> </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr id="project-1" title="Project 1">
+                        <td id="project-1-text" class="project-text">
+                            <h2><i>Battle X Armada</i></h2>
+                            <p class="proj-text">[Text About BattleXArmada]</p>
+                            <a href="https://github.com/MiramarCISC/CISC191-SPRING2021-B.git">Source Code</a>
+                        </td>
+                        <td id="project-1-img">
+                            <picture>
+                                <source media="(max-width: 301px)" srcset="/assets/images/battlexarmada-100"
+                                    alt="BattleXArmada Logo">
+                                <source media="(max-width: 501px)" srcset="/assets/images/battlexarmada-300"
+                                    alt="BattleXArmada Logo">
+                                <img class="project-img" src="/assets/images/battlexarmada.gif"
+                                    alt="BattleXArmada Logo">
+                            </picture>
+
+                        </td>
+                    </tr>
+                    <tr id="project-2" title="Project 2">
+                        <td id="project-2-text" class="project-text">
+                            <h2><i>Future Now!</i></h2>
+                            <p class="proj-text">[Text About Future Now!]</p>
+                            <a href="https://github.com/cse110-sp23-group24/cse110-sp23-group24-Final-Project.git">Source
+                                Code</a>
+                        </td>
+                        <td id="project-2-vid">
+                            <!-- Use id to modify in script -->
+                            <video id="project-2-vid" controls title="YouTube video player">
+                                <source src="/assets/videos/project1.mp4" type="video/webm" alt="Future Now Video">
+                            </video>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 5">
+            <title>Fancy Border</title>
+            <g class="bars-divider">
+                <path id="top_bar"
+                    d="M110.0496 1.2811911L6.06836 1.28125l1e-7-.2614843c0-.18904923.1008565-.36373793.264578-.45826252.1637214.0945246.264578.26921329.264578.45826252L109.52044 1.019764c0-.18904919.10086-.36373787.26458-.45826251.16372.0945246.26458.26921332.26458.45826251z"
+                    fill="#5a847b">
+                    <title>Top Bar</title>
+                </path>
+                <path id="bottom_bar"
+                    d="M11.06836 3.28125v.259766c0 .18905.09995.3644591.263671.458984.16372-.09453.265625-.269934.265626-.458984 30.222309-.03916 92.873043 0 92.873043 0 0 .18905.1.364454.26368.458984.16372-.0945299.26562-.269934.26562-.458984V3.28125z"
+                    fill="#5a847b">
+                    <title>Bottom Bar</title>
+                </path>
+            </g>
+        </svg>
+
+        <section id="curernt-projects" class="user-content" title="Current Projects">
+            <h2>Current Projects</h2>
+            <p id="current-p">[Text on Current Projects]</p>
+            <br>
+            <form id="curr-proj-form" title="Project Update">
+                <h3>Keep Updated!</h3>
+                <div id="project-update" class="form-data" title="Email Subscription">
+                    <label for="email" title="Project Update Email"> Email: </label><br>
+                    <input id="email" name="email" type="email" required>
+                </div>
+
+                <div id="curr-proj-button" class="form-button">
+                    <input title="Subscribe!" type="submit" value="Subscribe!" style="text-align: center; font-family: 'Roboto', sans-serif, Arial;" >
+
+                    <!-- Add script to make template appear after button input -->
+                    <template class="sub-text">
+                        <h3><strong>You Have Subscribed!</strong></h3>
+                    </template>
+                </div>
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer title="Contact">
+        <a id="instagram" title="Instagram" href="https://instagram.com/_sholll_?igshid=YmMyMTA2M2Y="
+            target="_blank"><img class="social-img" src="/assets/images/inta-black-logo.gif" alt="Instagram"></a>
+        <a id="github" title="GitHub" href="https://github.com/Sholehani" target="_blank"><img class="social-img"
+                src="/assets/images/github-black-logo.gif" alt="GitHub"></a>
+        <a id="dicord" title="Discord" href="https://discordapp.com/users/[301450820963139584]" target="_blank"><img
+                class="social-img" src="/assets/images/discord-black-icon.gif" alt="Discord"></a>
+        <a id="email" title="Email" href="mailto:10mariashol15@gmail.com" target="_blank"><img class="social-img"
+                src="/assets/images/google-black-logo.gif" alt="Email"></a>
+    </footer>
+
+</body>
+
+</html>

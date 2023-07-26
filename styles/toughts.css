@@ -1,0 +1,188 @@
+html{
+    background-color: white;
+}
+
+@font-face {
+    font-family: "Signika";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Signika/static/Signika-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Signika";
+    font-style: bold;
+    font-weight: 300;
+    src: url(/fonts/Signika/static/Signika-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Signika";
+    font-style: italic;
+    font-weight: 300;
+    src: url(/fonts/Signika/static/Signika-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: bold;
+    font-weight: 300;
+    src: url(/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 300;
+    src: url(/fonts/Roboto/Roboto-BlackItalic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoSlab";
+    font-style: bold;
+    font-weight: 300;
+    src: url(/fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf) format("truetype");
+}
+
+img, p{
+    opacity: 0;
+    animation: fadeInAnimation ease 2500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(240, 240, 247);
+}
+body {
+    background-color: rgb(240, 240, 247);
+    min-height: 100vh;
+    width:100%;
+   
+    margin: 0.5vh 0 0.5vh;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+}
+
+#projects-container{
+    margin: 1vw 5vw 1vw 5vw;
+}
+
+nav > a{
+    margin-right: 5vw;
+    border-radius: 0.2rem;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color:#527d8d;
+    text-align: start;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a {
+    font-family: "Roboto";
+    color: #7a7b7e;
+    font-weight: bold;
+    text-align: start;
+}
+
+h1 {
+    font-family: "Signika", sans-serif, Arial;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: start;
+}
+
+h2 {
+    font-size: 3rem;
+    color: black;
+    font-family: "Roboto", sans-serif, Arial;
+
+}
+
+h3 {
+    font-size: 2rem;
+    color: black;
+    font-family: "Roboto", sans-serif, Arial;
+}
+
+p{
+    margin: 5rem 8rem 5rem 8rem;
+    text-align: start;
+    color: black;
+    font-family: "RobotoSlab", sans-serif, Arial;
+    font-size: large;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li{
+    font-family: "RobotoSlab", sans-serif, Arial;  
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+details, #share-quote{
+    font-family: "RobotoSlab", sans-serif, Arial;
+    font-size: medium;
+    text-align: center;
+}
+
+textarea{
+    border-color: #7a7b7e;
+    border-radius: 0.2rem;
+}
+
+.social-img {
+    min-width: 4vmin;
+    min-height: 4vmin;
+    max-width: 4vmin;
+    max-height: 4vmin;
+    padding: 2vmin 1vmin 2vmin 1vmin;
+}
+
+footer{
+    margin-left: 1rem;
+}

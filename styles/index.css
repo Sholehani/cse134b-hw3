@@ -1,0 +1,155 @@
+html{
+    background-color: white;
+}
+
+@font-face {
+    font-family: "Signika";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Signika/static/Signika-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Signika";
+    font-style: bold;
+    font-weight: 300;
+    src: url(/fonts/Signika/static/Signika-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Signika";
+    font-style: italic;
+    font-weight: 300;
+    src: url(/fonts/Signika/static/Signika-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+#home-intro {
+    animation: fadeInAnimation ease 3500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#home-pic, footer{
+    opacity: 0;
+    animation: fadeInAnimation ease 3500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: rgb(240, 240, 247);
+    margin: 1rem 0 0 0;
+    height: 100vh;
+    width:100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a{
+    margin-right: 5vw;
+    border-radius: 0.2rem;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color:#527d8d;
+    text-align: start;
+}
+
+nav>a:hover{
+    text-decoration: underline;
+}
+
+a {
+    font-family: "Roboto";
+    color: #7a7b7e;
+    text-align: start;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+    background-color: rgb(240, 240, 247);
+    border-radius: 1rem;
+
+    padding-top: 3rem;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+    padding-left: 5rem;
+}
+
+h1 {
+    font-family: "Signika", sans-serif, Arial;
+    font-weight: bold;
+    padding: 1rem 2rem 1rem 2rem;
+    text-align: start;
+}
+
+h2 {
+    font-size: 5rem;
+    color: black;
+    font-family: "Signika", sans-serif, Arial;
+    text-align: start;
+}
+
+h3 {
+    font-size: 2rem;
+    color: black;
+    font-family: "Roboto", sans-serif, Arial;
+    text-align: start;
+}
+
+button{
+    font-family: "Roboto", sans-serif, Arial;
+    background-color: #527d8d;
+    width: 10rem;
+    height: 3rem;
+    color: rgb(240, 240, 247);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #7ea5b4;
+}
+
+footer{
+    padding-left: 1rem;
+    background-color: rgb(240, 240, 247);
+}
+
+picture, img {
+    border-radius: 0.5rem;
+}
+
+.social-img{
+    width: 4vmin;
+    height: 4vmin;
+    margin: 2vmin 1vmin 2vmin 3vmin;
+}
+
+/* * {
+    border:1px solid black;
+} */
+
