@@ -1,42 +1,8 @@
-
-html{
-    background-color: white;
-    min-width: 100%;
-}
-
 @font-face {
-    font-family: "Signika";
+    font-family: "RobotoSlab";
     font-style: normal;
     font-weight: 300;
-    src: url(/fonts/Signika/static/Signika-Regular.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Signika";
-    font-style: italic;
-    font-weight: 300;
-    src: url(/fonts/Signika/static/Signika-Light.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    src: url(/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Roboto";
-    font-style: italic;
-    font-weight: 300;
-    src: url(/fonts/Roboto/Roboto-BlackItalic.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 300;
-    src: url(/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+    src: url(/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf) format("truetype");
 }
 
 img, p, #goals-list{
@@ -59,11 +25,11 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgb(240, 240, 247);
+    background-color:  var(--white-200);
 }
 
 body {
-    background-color: rgb(240, 240, 247);
+    background-color: var(--white-200);
        
     margin: 0.5vh 0 0.5vh;
     min-height: 100%;
@@ -81,7 +47,7 @@ nav > a{
     font-size: large;
     font-weight: bold;
     text-decoration: none;
-    color:#527d8d;
+    color:var(--green-100);
     text-align: start;
 }
 
@@ -91,7 +57,7 @@ nav>a:hover{
 
 a {
     font-family: "Roboto", sans-serif, Arial;
-    color: #7a7b7e;
+    color: var(--gray-200);
     text-align: start;
 }
 
@@ -116,7 +82,6 @@ p{
 
 #about-me {
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: column;
     flex-wrap:wrap;
     padding-top: 3rem;
@@ -150,10 +115,6 @@ img {
     border-radius: 0.5rem;
 }
 
-canvas {
-    color: gray;
-}
-
 .social-img {
     width: 4vmin;
     height: 4vmin;
@@ -163,7 +124,3 @@ canvas {
 footer{
     margin-left: 1rem;
 }
-/* 
-body {
-    border:1px solid black;
-} */

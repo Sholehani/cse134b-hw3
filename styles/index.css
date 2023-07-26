@@ -2,6 +2,15 @@ html{
     background-color: white;
 }
 
+:root{
+    --green-50:#7ea5b4;
+    --green-100:#527d8d;
+
+    --white-200:rgb(240, 240, 247);
+
+    --gray--200:#7a7b7e;
+}
+
 @font-face {
     font-family: "Signika";
     font-style: normal;
@@ -29,7 +38,7 @@ html{
     animation-fill-mode: forwards;
 }
 
-#home-pic, footer{
+#home-pic, img{
     opacity: 0;
     animation: fadeInAnimation ease 3500ms;
     animation-iteration-count: 1;
@@ -46,7 +55,7 @@ html{
 }
 
 body {
-    background-color: rgb(240, 240, 247);
+    background-color: var(--white-200);
     margin: 1rem 0 0 0;
     height: 100vh;
     width:100%;
@@ -65,7 +74,7 @@ nav > a{
     font-size: large;
     font-weight: bold;
     text-decoration: none;
-    color:#527d8d;
+    color:var(--green-100);
     text-align: start;
 }
 
@@ -75,7 +84,7 @@ nav>a:hover{
 
 a {
     font-family: "Roboto";
-    color: #7a7b7e;
+    color: var(--gray-200);
     text-align: start;
 }
 main {
@@ -83,8 +92,7 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-wrap:wrap;
-    background-color: rgb(240, 240, 247);
-    border-radius: 1rem;
+    background-color: var(--white-200);
 
     padding-top: 3rem;
     padding-right: 5rem;
@@ -115,21 +123,21 @@ h3 {
 
 button{
     font-family: "Roboto", sans-serif, Arial;
-    background-color: #527d8d;
+    background-color: var(--green-100);
     width: 10rem;
     height: 3rem;
-    color: rgb(240, 240, 247);
+    color: var(--white-200);
     border: none;
     border-radius: 0.5rem;
 }
 
 button:hover {
-    background-color: #7ea5b4;
+    background-color: var(--green-50);
 }
 
 footer{
     padding-left: 1rem;
-    background-color: rgb(240, 240, 247);
+    background-color:var(--white-200);
 }
 
 picture, img {
@@ -141,8 +149,3 @@ picture, img {
     height: 4vmin;
     margin: 2vmin 1vmin 2vmin 3vmin;
 }
-
-/* * {
-    border:1px solid black;
-} */
-
